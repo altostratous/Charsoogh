@@ -1,0 +1,16 @@
+E:\Desktop\Jobs\Sharif\Entrance Piknik\Charsoogh\Charsoogh\bin\Debug\Charsoogh.exe.config
+E:\Desktop\Jobs\Sharif\Entrance Piknik\Charsoogh\Charsoogh\bin\Debug\Charsoogh.exe
+E:\Desktop\Jobs\Sharif\Entrance Piknik\Charsoogh\Charsoogh\bin\Debug\Charsoogh.pdb
+E:\Desktop\Jobs\Sharif\Entrance Piknik\Charsoogh\Charsoogh\bin\Debug\AForge.dll
+E:\Desktop\Jobs\Sharif\Entrance Piknik\Charsoogh\Charsoogh\bin\Debug\AForge.Imaging.dll
+E:\Desktop\Jobs\Sharif\Entrance Piknik\Charsoogh\Charsoogh\bin\Debug\AForge.Math.dll
+E:\Desktop\Jobs\Sharif\Entrance Piknik\Charsoogh\Charsoogh\bin\Debug\AForge.xml
+E:\Desktop\Jobs\Sharif\Entrance Piknik\Charsoogh\Charsoogh\bin\Debug\AForge.Imaging.xml
+E:\Desktop\Jobs\Sharif\Entrance Piknik\Charsoogh\Charsoogh\bin\Debug\AForge.Math.xml
+E:\Desktop\Jobs\Sharif\Entrance Piknik\Charsoogh\Charsoogh\obj\Debug\Charsoogh.csprojResolveAssemblyReference.cache
+E:\Desktop\Jobs\Sharif\Entrance Piknik\Charsoogh\Charsoogh\obj\Debug\Charsoogh.Main.resources
+E:\Desktop\Jobs\Sharif\Entrance Piknik\Charsoogh\Charsoogh\obj\Debug\Charsoogh.Properties.Resources.resources
+E:\Desktop\Jobs\Sharif\Entrance Piknik\Charsoogh\Charsoogh\obj\Debug\Charsoogh.TestCaseView.resources
+E:\Desktop\Jobs\Sharif\Entrance Piknik\Charsoogh\Charsoogh\obj\Debug\Charsoogh.csproj.GenerateResource.Cache
+E:\Desktop\Jobs\Sharif\Entrance Piknik\Charsoogh\Charsoogh\obj\Debug\Charsoogh.exe
+E:\Desktop\Jobs\Sharif\Entrance Piknik\Charsoogh\Charsoogh\obj\Debug\Charsoogh.pdb

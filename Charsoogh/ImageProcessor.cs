@@ -10,12 +10,8 @@ namespace Charsoogh
     {
         public static bool Decide(Image input)
         {
-            input = GetUpperSide(GetUpperSide(input));
-            int red = GetMaxIntensity(GetGrayscale(ExtractRedChannel(input)));
-            int blue = GetMaxIntensity(GetGrayscale(ExtractBlueChannel(input)));
-            Console.WriteLine(red - blue);
-            if (red - blue > 30)return true;
-            return false;
+            return GetMeanIntensity( GetGrayscale( GetGrayLikeParts(input))) > 10;
+
         }
         
     }

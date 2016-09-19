@@ -25,14 +25,32 @@ namespace Charsoogh
         {
             return Apply(image, new ChannelFiltering(new AForge.IntRange(0, 255), new AForge.IntRange(0, 0), new AForge.IntRange(0, 0)));
         }
+        private static Image ExtractGreenChannel(Image image)
+        {
+            return Apply(image, new ChannelFiltering(new AForge.IntRange(0, 0), new AForge.IntRange(0, 255), new AForge.IntRange(0, 0)));
+        }
         private static int GetMeanIntensity(Image image)
         {
             return (int)(new ImageStatistics(image.UnmanagedImage).Gray.Mean);
         }
 
+        private static Image GetGrayLikeParts(Image image)
+        {
+            return ColorFilter(image, System.Drawing.Color.Gray, 40);
+        }
+
         private static Image GetGrayscale(Image image)
         {
-            return Apply(image, Grayscale.CommonAlgorithms.BT709);
+            return Apply(image, Grayscale.CommonAlgorithms.RMY);
+        }
+        private static int GetMinIntensity(Image image)
+        {
+            return (int)(new ImageStatistics(image.UnmanagedImage).Gray.Min);
+        }
+
+        private static Image ColorFilter(Image image, Color color, int range)
+        {
+            return Apply(image, new  ColorFiltering(new AForge.IntRange(color.R - range, color.R + range), new AForge.IntRange(color.G - range, color.G + range), new AForge.IntRange(color.G - range, color.G + range)));
         }
 
         private static int GetMaxIntensity(Image image)

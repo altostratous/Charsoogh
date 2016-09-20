@@ -39,6 +39,14 @@ namespace Charsoogh
             return ColorFilter(image, System.Drawing.Color.Gray, 40);
         }
 
+        private static Image GetOrangeLikeParts(Image image)
+        {
+            UnmanagedImage unmanagedImage = image.UnmanagedImage;
+            Image result = new Image() { UnmanagedImage = new ColorFiltering(new AForge.IntRange(200, 255), new AForge.IntRange(100, 220), new AForge.IntRange(0, 30)).Apply(image.UnmanagedImage) };
+            Output.Last().Add(result);
+            return result;
+        }
+
         private static Image GetGrayscale(Image image)
         {
             return Apply(image, Grayscale.CommonAlgorithms.RMY);
@@ -62,19 +70,19 @@ namespace Charsoogh
             return Apply(image, new HomogenityEdgeDetector());
         }
 
-        public static Image GetEqualizedImage(Image image)
-        {
-            return Apply(image, new HistogramEqualization());
-        }
+        //public static Image GetEqualizedImage(Image image)
+        //{
+        //    return Apply(image, new HistogramEqualization());
+        //}
 
 
 
-        private static Image GetDownerSide(Image image)
+        private static Image GetBottomSide(Image image)
         {
             Rectangle rect = new Rectangle(0, image.UnmanagedImage.Height / 2, image.UnmanagedImage.Width, image.UnmanagedImage.Height / 2);
             return Apply(image, new Crop(rect));
         }
-        public static Image GetUpperSide(Image image)
+        public static Image GetTopSide(Image image)
         {
             Rectangle rect = new Rectangle(0, 0, image.UnmanagedImage.Width, image.UnmanagedImage.Height / 2);
             return Apply(image, new Crop(rect));

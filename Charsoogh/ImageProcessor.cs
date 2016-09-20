@@ -10,8 +10,7 @@ namespace Charsoogh
     {
         public static bool Decide(Image input)
         {
-            return GetMeanIntensity( GetGrayscale( GetGrayLikeParts(input))) > 10;
-
+            return false;
         }
         
     }

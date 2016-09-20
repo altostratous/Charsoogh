@@ -21,7 +21,13 @@ namespace Charsoogh
         public TestCaseView(string directory, bool expected, bool userDecision)
         {
             InitializeComponent();
-            foreach (string file in Directory.GetFiles(directory))
+            List<string> files = new List<string>(Directory.GetFiles(directory));
+            files.Sort(new Comparison<string>((string item1, string item2) => {
+                return Convert.ToInt32(Path.GetFileNameWithoutExtension(item1)).CompareTo(
+                    Convert.ToInt32(Path.GetFileNameWithoutExtension(item2))
+                    );
+                }));
+            foreach (string file in files)
             {
                 resultPanel.Controls.Add(new PictureBox() { ImageLocation = file, Dock = DockStyle.Top, SizeMode = PictureBoxSizeMode.Zoom, Height = 210 });
             }
